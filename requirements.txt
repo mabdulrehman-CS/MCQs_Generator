@@ -1,7 +1,10 @@
-openai
 langchain
+langchain-core
+langchain-groq
+groq
 streamlit
 python-dotenv
 PyPDF2
+pandas
 
 -e .

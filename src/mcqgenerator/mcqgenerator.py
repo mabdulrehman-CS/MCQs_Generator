@@ -25,7 +25,12 @@ llm = ChatGroq(
     model_name="llama-3.3-70b-versatile"  # Updated to currently supported Groq model
 )
 
-with open("D:\\MCQs_Generator\\Response.json", "r") as f:
+# Get the directory where this script is located and find Response.json relative to project root
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
+RESPONSE_JSON_PATH = os.path.join(PROJECT_ROOT, "Response.json")
+
+with open(RESPONSE_JSON_PATH, "r") as f:
     RESPONSE_JSON = json.load(f)
 
 TEMPLATE = """

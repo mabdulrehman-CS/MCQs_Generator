@@ -42,14 +42,14 @@ st.markdown("""
     }
     
     .main {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
         animation: gradientShift 15s ease infinite;
     }
     
     @keyframes gradientShift {
-        0% { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-        50% { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
-        100% { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        0% { background: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%); }
+        50% { background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%); }
+        100% { background: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%); }
     }
     
     .stApp {
@@ -98,7 +98,7 @@ st.markdown("""
     }
     
     .stButton > button {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
         color: white;
         border: none;
         border-radius: 50px;
@@ -113,7 +113,7 @@ st.markdown("""
     .stButton > button:hover {
         transform: translateY(-3px);
         box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-        background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
     }
     
     .stButton > button:active {
@@ -130,21 +130,21 @@ st.markdown("""
     
     .stTextInput > div > div > input:focus,
     .stNumberInput > div > div > input:focus {
-        border-color: #667eea;
-        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        border-color: #0093E9;
+        box-shadow: 0 0 0 3px rgba(0, 147, 233, 0.1);
     }
     
     .stFileUploader {
-        border: 2px dashed #667eea;
+        border: 2px dashed #0093E9;
         border-radius: 15px;
         padding: 2rem;
-        background: rgba(102, 126, 234, 0.05);
+        background: rgba(0, 147, 233, 0.05);
         transition: all 0.3s ease;
     }
     
     .stFileUploader:hover {
-        border-color: #764ba2;
-        background: rgba(118, 75, 162, 0.1);
+        border-color: #00d2ff;
+        background: rgba(0, 210, 255, 0.1);
     }
     
     .stDataFrame {
@@ -173,7 +173,7 @@ st.markdown("""
     }
     
     .success-box {
-        background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        background: linear-gradient(135deg, #06beb6 0%, #48b1bf 100%);
         color: white;
         padding: 1rem;
         border-radius: 10px;
@@ -193,7 +193,7 @@ st.markdown("""
     }
     
     div[data-testid="stSpinner"] > div {
-        border-color: #667eea;
+        border-color: #0093E9;
         border-right-color: transparent;
     }
     
@@ -213,14 +213,14 @@ st.markdown("""
     }
     
     thead tr th {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        background: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%) !important;
         color: white !important;
         font-weight: 600 !important;
         padding: 1rem !important;
     }
     
     tbody tr:hover {
-        background: rgba(102, 126, 234, 0.1) !important;
+        background: rgba(0, 147, 233, 0.1) !important;
         transform: scale(1.01);
         transition: all 0.2s ease;
     }

@@ -1,6 +1,6 @@
 # MCQ Generator 🤖
 
-An end-to-end AI-powered Multiple Choice Questions (MCQ) Generator application built with LangChain, Groq AI, and Streamlit. Upload any PDF or text file and generate customized MCQs instantly!
+An end-to-end AI-powered Multiple Choice Questions (MCQ) Generator application built with LangChain, Groq AI, and Streamlit. Upload any PDF or text file and generate customized MCQs instantly with the downloadable option.
 
 ## 🌐 Live Demo
 

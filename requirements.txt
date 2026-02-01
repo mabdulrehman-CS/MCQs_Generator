@@ -6,5 +6,6 @@ streamlit
 python-dotenv
 PyPDF2
 pandas
+reportlab
 
 -e .

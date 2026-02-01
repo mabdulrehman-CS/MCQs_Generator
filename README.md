@@ -14,12 +14,17 @@ An end-to-end AI-powered Multiple Choice Questions (MCQ) Generator application b
 - 📊 **Formatted Output**: Questions displayed in a clean table format
 - 📝 **Expert Review**: AI evaluates the complexity and quality of generated questions
 - 🚀 **Fast Generation**: Powered by Groq's fast inference
+- 🎨 **Beautiful UI**: Modern animated interface with gradient backgrounds and smooth transitions
+- 💾 **PDF Export**: Download generated MCQs as professionally formatted PDF documents
+- ✨ **Animations**: Engaging fade-in, slide-in, and bounce effects throughout the app
+- 🎭 **Interactive Design**: Hover effects, glass-morphism, and responsive layouts
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Streamlit
+- **Frontend**: Streamlit with Custom CSS Animations
 - **Backend**: Python, LangChain
 - **AI Model**: Groq AI (Llama 3.3-70B-Versatile)
+- **PDF Generation**: ReportLab
 - **Deployment**: AWS EC2 (Ubuntu)
 
 ## 📁 Project Structure
@@ -153,9 +158,30 @@ Open `http://your-ec2-public-ip:8501` in your browser.
    - **Subject**: Enter the subject (e.g., "Machine Learning", "Biology")
    - **Complexity Level**: Enter difficulty (e.g., "Easy", "Medium", "Hard")
 
-3. **Generate**: Click "Generate MCQs" button
+3. **Generate**: Click "✨ Generate MCQs" button and watch the beautiful animations!
 
-4. **View Results**: The generated MCQs will be displayed in a table format with an expert review analysis.
+4. **View Results**: The generated MCQs will be displayed in an interactive table format with an expert review analysis.
+
+5. **Download PDF**: Click the "📄 Download MCQs as PDF" button to save your questions as a professionally formatted PDF document with:
+   - Subject header and metadata
+   - All questions with choices
+   - Correct answers highlighted
+   - Complete AI review and analysis
+   - Automatic filename with subject and timestamp
+
+## 🎨 UI Features
+
+The application now features a modern, animated interface with:
+
+- **Animated Gradient Background**: Smooth color transitions between purple, pink, and blue
+- **Fade-in Animations**: Title and form elements animate smoothly on page load
+- **Glass-morphism Design**: Semi-transparent form with blur effect
+- **Interactive Elements**: Hover effects on buttons, inputs, and table rows
+- **Success Feedback**: Balloons and animated success messages
+- **Professional Typography**: Google Poppins font throughout
+- **Responsive Layout**: Two-column form design for better organization
+- **Styled Components**: Rounded corners, shadows, and smooth transitions
+- **Color-coded UI**: Purple/pink gradient theme for visual consistency
 
 ## 🔧 Configuration
 
@@ -176,14 +202,28 @@ llm = ChatGroq(
 - `llama3-8b-8192`
 - `mixtral-8x7b-32768`
 
-## 📝 API Reference
-Use GroqAPI and other open source APIs and models because these are free to use.
-
 ### Core Functions
 
 - `read_file(file)`: Reads and extracts text from PDF or TXT files
 - `get_table_data(quiz)`: Parses quiz JSON and formats it for display
 - `generate_evaluate_chain`: LangChain chain that generates and evaluates MCQs
+- `create_pdf(df, review, subject, mcq_count, tone)`: Generates professionally formatted PDF documents with all MCQ data
+
+## 📦 Dependencies
+
+Key Python packages used:
+
+```
+langchain              # LLM framework
+langchain-core         # Core LangChain components
+langchain-groq         # Groq AI integration
+groq                   # Groq API client
+streamlit              # Web interface
+python-dotenv          # Environment variables
+PyPDF2                 # PDF file reading
+pandas                 # Data manipulation
+reportlab              # PDF generation
+```
 
 ## 🤝 Contributing
 
